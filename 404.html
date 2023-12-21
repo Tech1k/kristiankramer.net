@@ -16,10 +16,6 @@
 	    <a href="https://kristiankramer.net"><button class="button"><span>Return to homepage</span></button></a>
         </span>
         <style>
-          *{
-              transition: all 0.6s;
-          }
-
           html {
               height: 100%;
               background-color: lightgrey;
@@ -29,7 +25,7 @@
               font-family: 'Lato', sans-serif;
               color: lightgrey;
               margin: 0;
-              background: linear-gradient(54deg,rgba(56,67,188,.90) 34%,rgba(141,77,188,.90));
+              background: linear-gradient(to right, #141e30, #243b55);
           }
 
           #main{
@@ -110,6 +106,25 @@
           @keyframes type{
               from{box-shadow: inset -3px 0px 0px #888;}
               to{box-shadow: inset -3px 0px 0px transparent;}
+          }
+
+          /* Scroll bar */
+          * {
+            scrollbar-width: thin;
+            scrollbar-color: whitesmoke rgba(153,170,255,1);
+          }
+
+          *::-webkit-scrollbar {
+            width: 7px;
+          }
+
+          *::-webkit-scrollbar-track {
+            background: transparent;
+          }
+
+          *::-webkit-scrollbar-thumb {
+            background-color: rgba(137, 137, 137, 1);
+            border-radius: 20px;
           }
         </style>
       </div>
